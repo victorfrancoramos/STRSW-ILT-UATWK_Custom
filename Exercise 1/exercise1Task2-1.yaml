@@ -18,6 +18,9 @@ spec:
       limits:
         memory: "128Mi"
         cpu: "500m"
+    volumeMounts:
+    - mountPath: /root/
+      name: local-vol
   volumes:
   - name: local-vol
     hostPath:
