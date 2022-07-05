@@ -18,3 +18,8 @@ spec:
       limits:
         memory: "128Mi"
         cpu: "500m"
+  volumes:
+  - name: local-vol
+    hostPath:
+      path: /hostVol
+      type: Directory
