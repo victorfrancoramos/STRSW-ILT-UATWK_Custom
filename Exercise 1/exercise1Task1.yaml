@@ -14,8 +14,8 @@ spec:
         memory: "128Mi"
         cpu: "500m"
     volumeMounts:
-    - mountPath: change_me
-      name: change_me
+    - mountPath: /opt/this
+      name: myvol
   volumes:
-  - name: change_me
-    emptyDir: {change_me}
+  - name: myvol
+    emptyDir: { }
