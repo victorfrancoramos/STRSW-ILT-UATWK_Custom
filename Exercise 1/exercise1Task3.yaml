@@ -19,7 +19,7 @@ spec:
         memory: "128Mi"
         cpu: "500m"
     volumeMounts:
-    - name: shared-vol
+    - name: shared-data
       mountPath: /usr/share/nginx/html
   - name: second
     image: debian
@@ -31,7 +31,7 @@ spec:
         memory: "128Mi"
         cpu: "500m"
     volumeMounts:
-    - name: shared-vol
+    - name: shared-data
       mountPath: /pod-data
     command: ["/bin/sh"]
     args:
