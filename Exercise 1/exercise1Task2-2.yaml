@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: hostPath2-pod
+  name: hostpath2-pod
   namespace: default
 spec:
   containers:
