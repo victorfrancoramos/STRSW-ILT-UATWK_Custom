@@ -20,3 +20,9 @@ spec:
     volumeMounts:
     - mountPath: /opt/this
       name: nfsvol
+  volumes:
+  - name: nfsvol
+    nfs:
+      server: 192.168.0.31
+      path: /nfs
+      readOnly: false
