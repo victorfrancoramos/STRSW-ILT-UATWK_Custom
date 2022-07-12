@@ -10,5 +10,5 @@ spec:
   storageClassName: ""
   volumeName: manual-nfs-pv
   resources:
-    request:
+    requests:
       storage: 1Gi
