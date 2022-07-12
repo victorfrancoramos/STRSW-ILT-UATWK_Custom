@@ -21,3 +21,7 @@ spec:
       volumeMounts:
         - mountPath: "/usr/share/nginx/html"
           name: nfs-storage
+  volumes:
+  - name: nfs-storage
+    persistentVolumeClaim:
+      claimName: manual-nfs-pvc
