@@ -9,6 +9,6 @@ spec:
   - ReadWriteMany
   storageClassName: ""
   volumeName: manual-nfs-pv
-  resource:
+  resources:
     request:
       storage: 1Gi
