@@ -5,3 +5,10 @@ metadata:
   labels:
     storage.k8s.io/name: nfs
 spec:
+  accessModes:
+  - ReadWriteMany
+  storageClassName: ""
+  volumeName: manual-nfs-pv
+  resource:
+    request:
+      storage: 1Gi
