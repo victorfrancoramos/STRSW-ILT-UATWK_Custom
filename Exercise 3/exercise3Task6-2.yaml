@@ -4,4 +4,4 @@ metadata:
   name: san-basic
 provisioner: csi.trident.netapp.io
 parameters:
-  backendType: change_me
+  backendType: ontap-san
