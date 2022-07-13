@@ -4,6 +4,6 @@ metadata:
   name: nfs-basic
 provisioner: csi.trident.netapp.io
 parameters:
-  backendType: "change_me"
+  backendType: "ontap-nas"
 
 
