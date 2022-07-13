@@ -8,7 +8,7 @@ spec:
   volumes:
     - name: nfs-storage
       persistentVolumeClaim:
-       claimName: change_me
+       claimName: nfs-basic
   containers:
     - name: nfs-container
       image: nginx
