@@ -8,7 +8,7 @@ spec:
   volumes:
     - name: san-storage
       persistentVolumeClaim:
-       claimName: change_me
+       claimName: san-basic
   containers:
     - name: san-container
       image: nginx
