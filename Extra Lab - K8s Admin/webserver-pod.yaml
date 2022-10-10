@@ -5,6 +5,6 @@ metadata:
   namespace: default
 spec:
   containers:
-  - image: httpd:latest
+  - image: httpd:2.2
     name: httpd-container
   restartPolicy: Always
