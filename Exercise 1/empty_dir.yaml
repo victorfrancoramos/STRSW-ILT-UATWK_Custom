@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: Random-number
+spec: 
+  containers:
+  - name: alpine​​
+    image: alpine
+    command: ['/bin/sh', '-c']
+    arg: ['shuf -i 0-99 n1 >> /opt/number.out;']
+    volumeMounts:
+    - mountPath: /opt
+      name: data_vol
+  volumes:
+  - name: data_vol
+    emptyDir: {}
