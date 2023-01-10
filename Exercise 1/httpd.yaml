@@ -8,9 +8,9 @@ spec:
     image: httpd:2.2
     volumeMounts:
     - mountPath: /usr/local/apache2/htdocs
-      name: local_store
+      name: local-store
   volumes:
-  - name: local_store
+  - name: local-store
     hostPath:
       path: /local_volumes
       type: Directory

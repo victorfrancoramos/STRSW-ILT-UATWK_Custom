@@ -10,7 +10,7 @@ spec:
     arg: ['shuf -i 0-99 n1 >> /opt/number.out;']
     volumeMounts:
     - mountPath: /opt
-      name: data_vol
+      name: data-vol
   volumes:
-  - name: data_vol
+  - name: data-vol
     emptyDir: {}
